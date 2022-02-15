@@ -9,12 +9,18 @@
   </head>
 
   <body>
-    Hello
+    Hello jQuery!
     <div id="start">Start</div>
+    <a href="https://www.sololearn.com/">
+      Click here
+   </a> 
     <script>
       $(function () {
         $("#start").hide("Go! Go");
-      });
+
+        let val = $("a").attr("href");
+        console.log(val);
+      });      
     </script>
   </body>
 </html>
