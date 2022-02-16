@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <style type="text/css"></style>
+    <style type="text/css">
+      div {
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        margin: 20px;
+        border: 3px solid blue;
+        background-color: red;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
-    <div>Some text</div>
+    <div></div>
     <script>
       $(function () {
-        $("div").css("background-color", "cyan");
-        $("div").height(100);
-        $("div").width(100);
+        let txt = "";
+        txt += "width " + $("div").width() + " ";
+        txt += "height " + $("div").height() + " ";
+        txt += "innerWidth " + $("div").innerWidth() + " ";
+        txt += "innerHeight " + $("div").innerHeight() + "<br/>";
+        txt += "outerHeight " + $("div").outerHeight() + " ";
+        txt += "outerWidth " + $("div").outerWidth();
+
+        $("div").html(txt);
       });
     </script>
   </body>
