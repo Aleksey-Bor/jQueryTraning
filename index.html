@@ -7,7 +7,7 @@
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <style type="text/css">
-      .red {
+      p {
         color: red;
       }
     </style>
@@ -15,12 +15,10 @@
 
   <body>
     <p>Some text</p>
-    <button>Toggle Class</button>
     <script>
       $(function () {
-        $("button").click(function () {
-          $("p").toggleClass("red");
-        });
+        console.log($("p").css("color"));
+        $("p").css("color", "blue")
       });
     </script>
   </body>
