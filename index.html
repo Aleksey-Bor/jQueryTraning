@@ -12,7 +12,14 @@
     <p id="demo">Hi </p>
     <script>
       $(function () {
-        $("#demo").append("Max");
+        $("#demo").html("<ul><li>Hi </li></ul>");
+        $("#demo ul").attr("id", "list");
+        $("ul > li").attr("class", "list_item");
+        $(".list_item").append("Max");
+        $("#list").append("<li>Hello World</li>");
+        $("#list").prepend("<li>Hello Marsya</li>");
+        $("#demo").before("<h1>Test</h1>");
+      
       });
     </script>
   </body>
