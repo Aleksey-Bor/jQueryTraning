@@ -7,9 +7,7 @@
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <style type="text/css">
-      p {
-        color: red;
-      }
+
     </style>
   </head>
 
@@ -17,8 +15,7 @@
     <p>Some text</p>
     <script>
       $(function () {
-        console.log($("p").css("color"));
-        $("p").css("color", "blue")
+        $("p").css({"color": "white", "background-color": "pink", "font-size": "40px"})
       });
     </script>
   </body>
