@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <p id="demo">Hi </p>
+    <p id="demo">Hi</p>
     <script>
       $(function () {
         $("#demo").html("<ul><li>Hi </li></ul>");
@@ -19,7 +19,8 @@
         $("#list").append("<li>Hello World</li>");
         $("#list").prepend("<li>Hello Marsya</li>");
         $("#demo").before("<h1>Test</h1>");
-      
+        let newElem = $("<p></p>").text("I am new");
+        $("h1").after(newElem);
       });
     </script>
   </body>
