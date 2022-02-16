@@ -9,18 +9,10 @@
   </head>
 
   <body>
-    <p id="demo">Hi</p>
+    <p>a<span>b</span></p>
     <script>
       $(function () {
-        $("#demo").html("<ul><li>Hi </li></ul>");
-        $("#demo ul").attr("id", "list");
-        $("ul > li").attr("class", "list_item");
-        $(".list_item").append("Max");
-        $("#list").append("<li>Hello World</li>");
-        $("#list").prepend("<li>Hello Marsya</li>");
-        $("#demo").before("<h1>Test</h1>");
-        let newElem = $("<p></p>").text("I am new");
-        $("h1").after(newElem);
+        $("p span").text("a");
       });
     </script>
   </body>
