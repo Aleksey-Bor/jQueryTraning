@@ -11,6 +11,10 @@
         color: blue;
         font-size: xx-large;
       }
+      .red {
+        color: red;
+        font-size: large;
+      }
     </style>
   </head>
 
@@ -19,6 +23,8 @@
     <script>
       $(function () {
         $("div").addClass("header");
+        $("div").removeClass("header");
+        $("div").addClass("red");
       });
     </script>
   </body>
