@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <style type="text/css">
+      .header {
+        color: blue;
+        font-size: xx-large;
+      }
+    </style>
   </head>
 
   <body>
-    <p>a<span>b</span></p>
+    <div>Some text</div>
     <script>
       $(function () {
-        $("p span").text("a");
+        $("div").addClass("header");
       });
     </script>
   </body>
