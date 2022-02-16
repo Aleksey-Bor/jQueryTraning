@@ -9,16 +9,10 @@
   </head>
 
   <body>
-    Hello jQuery!
-    <div id="test">
-      <p>some text</p>
-    </div>
-    <input type="text" id="name" value="Pit" />
+    <p id="demo">Hi </p>
     <script>
       $(function () {
-        let name = $("#name").val();
-        $("p").text(name);
-        console.log(name);
+        $("#demo").append("Max");
       });
     </script>
   </body>
