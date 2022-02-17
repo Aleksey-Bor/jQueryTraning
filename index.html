@@ -21,7 +21,7 @@
     <script>
       $(function () {
         $("button").click(function () {
-          $("div").fadeTo(2000, 0.3);
+          $("div").slideToggle(1000);
         });
       });
       /*Query has some easy-to-implement effects to create animations.
@@ -30,7 +30,12 @@ The toggle() method is used to toggle between hiding and showing elements.
 
 
 Similar to the hide/show methods, jQuery provides the fadeInfadeOut methods, which fade an element in and out of visibility.
-Just like the toggle() method switches between hiding and showing, the fadeToggle() method fades in and out.*/
+Just like the toggle() method switches between hiding and showing, the fadeToggle() method fades in and out.
+
+Another method used for fading is fadeTo(), which allows fading to a given opacity (value between 0 and 1). For example: $("div").fadeTo(1500, 0.7);
+
+The slideUp() and slideDown() methods are used to create a sliding effect on elements.
+Again, similar to the previous toggle methods, the slideToggle() method switches between the sliding effects and can take two optional parameters: speed and callback.*/
     </script>
   </body>
 </html>
