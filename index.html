@@ -20,10 +20,11 @@
     <a href="https://www.sololearn.com">Click me</a>
     <script>
       $(function () {
-        $("a").click(function(e) {
-          console.log(e.pageX);
+        $("a").click(function (e) {
+          console.log("cliked");
           e.preventDefault();
-        })
+        });
+        $("a").trigger("click");
       });
 
       //Popular metods
