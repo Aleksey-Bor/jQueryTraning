@@ -20,30 +20,16 @@
   </head>
 
   <body>
-    <div>
-      body
-      <div style="width:300px;"> div
-        <ul> ul
-          <li> li
-            <p>paragraph</p>
-          </li>
-        </ul>   
-      </div>
-    </div>
+    <p style="color: red">Red</p>
+    <p style="color: green">Green</p>
+    <p style="color: blue">Blue</p>
     <script>
       $(function () {
-        let elems = $("p").parents();
-        elems.css("border", "2px solid red");
+        $("p").eq(1).remove();
       });
     </script>
+
+    //Popular metods //parent() //parents() //children() //siblings() //next()
+    nextAll() //prev() prevAll() //eq() //remove()
   </body>
 </html>
-
-//Popular metods
-//parent()
-//parents()
-//children()
-//siblings()
-//next() nextAll()
-//prev() prevAll()
-//eq()
