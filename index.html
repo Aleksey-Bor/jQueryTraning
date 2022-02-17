@@ -7,7 +7,7 @@
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <style type="text/css">
-      div {
+      /*   div {
         width: 300px;
         height: 100px;
         padding: 10px;
@@ -15,23 +15,19 @@
         border: 3px solid blue;
         background-color: red;
         color: white;
-      }
+      } */
     </style>
   </head>
 
   <body>
-    <div></div>
+    <div>
+      div element
+      <p>paragraph</p>
+    </div>
     <script>
       $(function () {
-        let txt = "";
-        txt += "width " + $("div").width() + " ";
-        txt += "height " + $("div").height() + " ";
-        txt += "innerWidth " + $("div").innerWidth() + " ";
-        txt += "innerHeight " + $("div").innerHeight() + "<br/>";
-        txt += "outerHeight " + $("div").outerHeight() + " ";
-        txt += "outerWidth " + $("div").outerWidth();
-
-        $("div").html(txt);
+        let e = $("p").parent();
+        e.css("border", "2px solid red");
       });
     </script>
   </body>
