@@ -7,32 +7,26 @@
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <style type="text/css">
-      .rem {
-        margin-left: 10px;
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
       }
     </style>
   </head>
 
   <body>
-    <h1>My To-Do List</h1>
-    <input type="text" placeholder="New item" />
-    <button id="add">Add</button>
-    <ol id="mylist"></ol>
+    <button>click</button>
+    <div></div>
     <script>
       $(function () {
-        $("#add").click(function () {
-          let val = $("input").val();
-          if (val !== "") {
-            let elem = $("<li></li>").text(val);
-            $(elem).append("<button class='rem'>Delete</button>");
-            $("#mylist").append(elem);
-            $("input").val("");
-          }
-          $(".rem").on("click", function (e) {
-            $(e.target).parent().remove();
-          });
-        });
+        $("button").click(function() {
+          $("div").toggle(1000);
+        })
       });
+      /*Query has some easy-to-implement effects to create animations.
+The hide() and show() methods are used to hide and show the selected elements.
+The toggle() method is used to toggle between hiding and showing elements.*/
     </script>
   </body>
 </html>
