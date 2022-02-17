@@ -19,10 +19,14 @@
   <body>
     <input type="text" id="name" />
     <div id="msg"></div>
+    <p>Click on me</p>
     <script>
       $(function () {
         $("#name").keydown(function () {
           $("#msg").html($("#name").val());
+        });
+        $("p").on("click", function() {
+          console.log("OY!!");
         });
       });
 
