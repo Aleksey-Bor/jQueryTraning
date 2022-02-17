@@ -20,13 +20,17 @@
     <div></div>
     <script>
       $(function () {
-        $("button").click(function() {
-          $("div").toggle(1000);
-        })
+        $("button").click(function () {
+          $("div").fadeToggle(1000);
+        });
       });
       /*Query has some easy-to-implement effects to create animations.
 The hide() and show() methods are used to hide and show the selected elements.
-The toggle() method is used to toggle between hiding and showing elements.*/
+The toggle() method is used to toggle between hiding and showing elements.
+
+
+Similar to the hide/show methods, jQuery provides the fadeInfadeOut methods, which fade an element in and out of visibility.
+Just like the toggle() method switches between hiding and showing, the fadeToggle() method fades in and out.*/
     </script>
   </body>
 </html>
