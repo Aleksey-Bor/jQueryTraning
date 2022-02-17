@@ -7,29 +7,40 @@
     <title>jQuery training</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <style type="text/css">
-      /*   div {
+      div {
+        background-color: aqua;
         width: 300px;
-        height: 100px;
-        padding: 10px;
-        margin: 20px;
-        border: 3px solid blue;
-        background-color: red;
-        color: white;
-      } */
+        height: 200px;
+      }
     </style>
   </head>
 
   <body>
-    <p style="color: red">Red</p>
-    <p style="color: green">Green</p>
-    <p style="color: blue">Blue</p>
+    <div id="demo"></div>
     <script>
       $(function () {
-        $("p").eq(1).remove();
+        $("#demo").click(function () {
+          $("body").html(Date());
+        });
       });
-    </script>
 
-    //Popular metods //parent() //parents() //children() //siblings() //next()
-    nextAll() //prev() prevAll() //eq() //remove()
+      //Popular metods
+      //parent()
+      //parents()
+      //children()
+      //siblings()
+      //next()
+      //nextAll();
+      //prev()
+      // prevAll()
+      //eq()
+
+      //remove()
+      //empty()
+
+      //click()
+
+
+    </script>
   </body>
 </html>
