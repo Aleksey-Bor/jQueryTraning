@@ -21,7 +21,12 @@
     <script>
       $(function () {
         $("button").click(function () {
-          $("div").animate({ opacity: "-=0.1", height: "+=200" }, 5000);
+          $("div").animate({ opacity: 1});
+          $("div").animate({ height: "+=100px", width: "+=100px", top: "+=100px",}, 500);
+          $("div").animate({ height: "-=100px", width: "-=100px", top: "+=100px",}, 500);
+          $("div").animate({ height: "+=100px", width: "+=100px", top: "-=100px",}, 500);
+          $("div").animate({ height: "-=100px", width: "-=100px", top: "-=100px",}, 500);
+          $("div").animate({ opacity: 0.5});
         });
       });
       /*Query has some easy-to-implement effects to create animations.
