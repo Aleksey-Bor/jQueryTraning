@@ -21,7 +21,7 @@
     <script>
       $(function () {
         $("button").click(function () {
-          $("div").slideToggle(1000);
+          $("div").animate({ width: "1000" }, 2000);
         });
       });
       /*Query has some easy-to-implement effects to create animations.
@@ -35,7 +35,14 @@ Just like the toggle() method switches between hiding and showing, the fadeToggl
 Another method used for fading is fadeTo(), which allows fading to a given opacity (value between 0 and 1). For example: $("div").fadeTo(1500, 0.7);
 
 The slideUp() and slideDown() methods are used to create a sliding effect on elements.
-Again, similar to the previous toggle methods, the slideToggle() method switches between the sliding effects and can take two optional parameters: speed and callback.*/
+Again, similar to the previous toggle methods, the slideToggle() method switches between the sliding effects and can take two optional parameters: speed and callback.
+
+animate()
+
+
+The animate() method lets you animate to a set value, or to a value relative to the current value.
+You need to define the CSS properties to be animated as its parameter in JSON format ("key":"value" pairs).
+The second parameter defines the speed of the animation.*/
     </script>
   </body>
 </html>
