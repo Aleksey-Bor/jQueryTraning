@@ -9,24 +9,24 @@
     <style type="text/css">
       div {
         width: 100px;
-        height: 100px;
         background-color: aqua;
       }
     </style>
   </head>
 
   <body>
-    <button>click</button>
-    <div></div>
+    <div class="menu">
+      <div id="item">Drop-Down</div>
+      <ul id="submenu">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
     <script>
       $(function () {
-        $("button").click(function () {
-          $("div").animate({ opacity: 1});
-          $("div").animate({ height: "+=100px", width: "+=100px", top: "+=100px",}, 500);
-          $("div").animate({ height: "-=100px", width: "-=100px", top: "+=100px",}, 500);
-          $("div").animate({ height: "+=100px", width: "+=100px", top: "-=100px",}, 500);
-          $("div").animate({ height: "-=100px", width: "-=100px", top: "-=100px",}, 500);
-          $("div").animate({ opacity: 0.5});
+        $("#item").click(function () {
+          $("#submenu").slideToggle(500);
         });
       });
       /*Query has some easy-to-implement effects to create animations.
